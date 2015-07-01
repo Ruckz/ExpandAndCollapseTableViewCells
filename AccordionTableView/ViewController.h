@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITableViewDelegate,UITableViewDelegate>
 
+{
+    NSArray   *parentCellItems;
+    NSInteger currentExpandedIndex;
+   
+
+}
+
+@property (nonatomic, strong) IBOutlet UITableView *tab;
 
 @end
 

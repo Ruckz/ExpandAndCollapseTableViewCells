@@ -14,6 +14,13 @@
 		1FB5512A1B43682A004A84A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB551291B43682A004A84A9 /* Images.xcassets */; };
 		1FB5512D1B43682A004A84A9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB5512B1B43682A004A84A9 /* LaunchScreen.xib */; };
 		1FB551391B43682A004A84A9 /* AccordionTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB551381B43682A004A84A9 /* AccordionTableViewTests.m */; };
+		1FB551451B436975004A84A9 /* LetsTalkCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB551431B436975004A84A9 /* LetsTalkCustomCell.m */; };
+		1FB551461B436975004A84A9 /* LetsTalkCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB551441B436975004A84A9 /* LetsTalkCustomCell.xib */; };
+		1FB5514A1B436986004A84A9 /* ChildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB551481B436986004A84A9 /* ChildCell.m */; };
+		1FB5514B1B436986004A84A9 /* ChildCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FB551491B436986004A84A9 /* ChildCell.xib */; };
+		1FE49B8B1B43EB1A006DBFF2 /* arrow_down_lt.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE49B8A1B43EB1A006DBFF2 /* arrow_down_lt.png */; };
+		1FE49B8F1B43F78C006DBFF2 /* arrow_up_lt.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE49B8E1B43F78C006DBFF2 /* arrow_up_lt.png */; };
+		1FE49B911B43F805006DBFF2 /* food & drink_lt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FE49B901B43F805006DBFF2 /* food & drink_lt@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,15 @@
 		1FB551321B43682A004A84A9 /* AccordionTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccordionTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB551371B43682A004A84A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FB551381B43682A004A84A9 /* AccordionTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccordionTableViewTests.m; sourceTree = "<group>"; };
+		1FB551421B436975004A84A9 /* LetsTalkCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LetsTalkCustomCell.h; sourceTree = "<group>"; };
+		1FB551431B436975004A84A9 /* LetsTalkCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LetsTalkCustomCell.m; sourceTree = "<group>"; };
+		1FB551441B436975004A84A9 /* LetsTalkCustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LetsTalkCustomCell.xib; sourceTree = "<group>"; };
+		1FB551471B436986004A84A9 /* ChildCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChildCell.h; sourceTree = "<group>"; };
+		1FB551481B436986004A84A9 /* ChildCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildCell.m; sourceTree = "<group>"; };
+		1FB551491B436986004A84A9 /* ChildCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChildCell.xib; sourceTree = "<group>"; };
+		1FE49B8A1B43EB1A006DBFF2 /* arrow_down_lt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_down_lt.png; sourceTree = "<group>"; };
+		1FE49B8E1B43F78C006DBFF2 /* arrow_up_lt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_up_lt.png; sourceTree = "<group>"; };
+		1FE49B901B43F805006DBFF2 /* food & drink_lt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food & drink_lt@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +101,16 @@
 				1FB551211B436829004A84A9 /* AppDelegate.m */,
 				1FB551231B436829004A84A9 /* ViewController.h */,
 				1FB551241B436829004A84A9 /* ViewController.m */,
+				1FB551421B436975004A84A9 /* LetsTalkCustomCell.h */,
+				1FB551431B436975004A84A9 /* LetsTalkCustomCell.m */,
+				1FB551441B436975004A84A9 /* LetsTalkCustomCell.xib */,
+				1FB551471B436986004A84A9 /* ChildCell.h */,
+				1FB551481B436986004A84A9 /* ChildCell.m */,
+				1FB551491B436986004A84A9 /* ChildCell.xib */,
 				1FB551261B436829004A84A9 /* Main.storyboard */,
+				1FE49B901B43F805006DBFF2 /* food & drink_lt@2x.png */,
+				1FE49B8E1B43F78C006DBFF2 /* arrow_up_lt.png */,
+				1FE49B8A1B43EB1A006DBFF2 /* arrow_down_lt.png */,
 				1FB551291B43682A004A84A9 /* Images.xcassets */,
 				1FB5512B1B43682A004A84A9 /* LaunchScreen.xib */,
 				1FB5511C1B436829004A84A9 /* Supporting Files */,
@@ -199,8 +224,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE49B911B43F805006DBFF2 /* food & drink_lt@2x.png in Resources */,
 				1FB551281B436829004A84A9 /* Main.storyboard in Resources */,
+				1FB5514B1B436986004A84A9 /* ChildCell.xib in Resources */,
 				1FB5512D1B43682A004A84A9 /* LaunchScreen.xib in Resources */,
+				1FE49B8B1B43EB1A006DBFF2 /* arrow_down_lt.png in Resources */,
+				1FE49B8F1B43F78C006DBFF2 /* arrow_up_lt.png in Resources */,
+				1FB551461B436975004A84A9 /* LetsTalkCustomCell.xib in Resources */,
 				1FB5512A1B43682A004A84A9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB5514A1B436986004A84A9 /* ChildCell.m in Sources */,
 				1FB551251B436829004A84A9 /* ViewController.m in Sources */,
 				1FB551221B436829004A84A9 /* AppDelegate.m in Sources */,
+				1FB551451B436975004A84A9 /* LetsTalkCustomCell.m in Sources */,
 				1FB5511F1B436829004A84A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +444,7 @@
 				1FB5513E1B43682A004A84A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FB5513F1B43682A004A84A9 /* Build configuration list for PBXNativeTarget "AccordionTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +453,7 @@
 				1FB551411B43682A004A84A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
