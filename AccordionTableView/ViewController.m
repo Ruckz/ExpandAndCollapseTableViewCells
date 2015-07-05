@@ -19,7 +19,6 @@
 @synthesize tab;
 
 
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -155,12 +154,13 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [self.tab beginUpdates];
     
-    LetsTalkCustomCell *cell = (LetsTalkCustomCell*)[tableView cellForRowAtIndexPath:indexPath];
     
-    if (currentExpandedIndex == indexPath.row) {
+    LetsTalkCustomCell *cell = (LetsTalkCustomCell*)[tableView cellForRowAtIndexPath:indexPath];
+    //Check row selection to expand or to collapse
+    if (currentExpandedIndex == indexPath.row)                  //selected an expanded cell
+    {
         [self collapseSubItemsAtIndex:currentExpandedIndex];
-        
-        currentExpandedIndex = -1;
+        currentExpandedIndex = -1;                              //set back for no cells are expanded
         cell.arrow.image = [UIImage imageNamed:@"arrow_down_lt"];
     }
     else
@@ -168,13 +168,13 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
         BOOL collapseFirst = currentExpandedIndex > -1;
         
         
-        if (collapseFirst) {
+        if (collapseFirst) {                                    //a cell other than selected index is expanded
             
             [self collapseSubItemsAtIndex:currentExpandedIndex];
              cell.arrow.image = [UIImage imageNamed:@"arrow_down_lt"];
 
         }
-        
+                                                                        
         if(collapseFirst && indexPath.row > currentExpandedIndex){
             currentExpandedIndex = indexPath.row - 1;
         }
@@ -201,9 +201,7 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [indexPaths addObject:[NSIndexPath indexPathForRow:insertPos++ inSection:0]];
     
-
     [self.tab insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
-    
     [self.tab scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:index inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:YES];
 }
 
@@ -211,7 +209,6 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 {
     
     NSMutableArray *indexPaths = [NSMutableArray new];
-    
     [indexPaths addObject:[NSIndexPath indexPathForRow:index+1 inSection:0]];
     
     [self.tab deleteRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
@@ -219,13 +216,11 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (void)viewDidLoad {
     
-    parentCellItems = [[NSMutableArray alloc]initWithObjects:@"personal care",@"clothing",@"health",@"food & drink",@"travel",@"transport",@"Technology",@"Home",@"Likes",@"Major moments",@"Life goals",nil];
-    
-
+    parentCellItems  = [[NSMutableArray alloc]initWithObjects:@"personal care",@"clothing",@"health",@"food & drink",@"travel",@"transport",@"Technology",@"Home",@"Likes",@"Major moments",@"Life goals",nil];
     
     currentExpandedIndex = -1; //No cells are expanded
     
-       [super viewDidLoad];
+    [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 

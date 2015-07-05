@@ -22,7 +22,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" red="0.6027030109" green="0.26653740879999999" blue="0.46798015510000002" alpha="1" colorSpace="calibratedRGB"/>
+                <color key="backgroundColor" red="0.96784357734806625" green="0.72822400459605841" blue="0.55777314943865541" alpha="1" colorSpace="calibratedRGB"/>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
